@@ -17,7 +17,7 @@ const TabIcon = ({icon, color, name, focused}) => {
       <Text className={`${focused ? 'font-psemibold': 'font-pregular'} text-xs `}
       style={{color:color}}
       >
-         Home
+         {name}
       </Text>
     </View>
   )
@@ -57,7 +57,7 @@ const TabsLayout = () => {
         <Tabs.Screen
           name="bookmark"
           options={{
-            title: "Bookmark",
+            title: "bookmark",
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
               <TabIcon
